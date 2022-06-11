@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
       <div>${hero.forces}</div>
       </div>`;
     }
-    document.getElementById('nameAlter').innerHTML = content1;
-    document.getElementById('persone__container').innerHTML = content;
+    document.getElementsByClassName('.nameAlter').innerHTML = content1;
+    document.getElementsByClassName('.persone__container').innerHTML = content;
     const rates = document.getElementsByTagName("rates");
     for (let rate of rates) {
       let rateValue = rate.options[rate.selectedIndex].value;
